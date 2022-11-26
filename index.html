@@ -2,23 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CS601 Form</title>
+    <title>BU MET | CS601</title>
 </head>
 <body>
     <div id="formWrapper">
-        <h1 id="formTitle">CS601 Form</h1>
+        <h1 id="formTitle">Boston University - Metropolitan College - CS601 Form</h1>
         <form action="">
+            <!--First row of form to gather first name input-->
             <div id="row1">
-                <label for="firstName">Please enter your first name (required) :</label>
+                <label for="firstName">Please enter your first name (required):</label>
                 <input type="text" name="firstName" id="firstName" required>
             </div>
+            <!--Second row of form to gather last name input-->
             <div id="row2">
-                <label for="lastName">Please enter your last name (required) :</label>
+                <label for="lastName">Please enter your last name (required):</label>
                 <input type="text" name="lastName" id="lastName" required>
             </div>
+            <!--Third row of form to gather first name of facilitator input-->
             <div id="row3">
-                <label for="facilitator">Please enter your facilitator's first name (required) :</label>
+                <label for="facilitator">Please enter your facilitator's first name (required):</label>
                 <input type="text" name="facilitator" id="facilitator" required>
+            </div>
+            <!--Fourth row of form for radio button choices of graduate program-->
+            <div id="row4">
+                <fieldset id="radioButtons">
+                    <legend>Which of the following graduate degree program are you enrolled in?</legend>
+                    <input type="radio" name="radioMessageType" value="Master of Science in Applied Data Analytics"><label for="radioMessageType">Master of Science in Applied Data Analytics</label><br>
+                    <input type="radio" name="radioMessageType" value="Master of Science in Computer Information Systems"><label for="radioMessageType">Master of Science in Computer Information Systems</label><br>
+                    <input type="radio" name="radioMessageType" value="Master of Science in Health Informatics"><label for="radioMessageType">Master of Science in Health Informatics</label><br>
+                    <input type="radio" name="radioMessageType" value="Master of Science in Software Development"><label for="radioMessageType">Master of Science in Software Development</label>
+                  </fieldset>
+            </div>
+            <!--Fifth row of form for checkbox choices of coding language experience-->
+            <div id="row4">
+                <fieldset id="checkboxChoices">
+                    <legend>Which of the following coding languages do you have experience with? (select all that apply)</legend>
+                    <input type="checkbox" name="cbLanguage1" value="CSS"><label for="cbLanguage1">CSS</label><br>
+                    <input type="checkbox" name="cbLanguage2" value="HTML"><label for="cbLanguage2">HTML</label><br>
+                    <input type="checkbox" name="cbLanguage3" value="JavaScript"><label for="cbLanguage3">JavaScript</label><br>
+                    <input type="checkbox" name="cbLanguage4" value="Python"><label for="cbLanguage4">Python</label><br>
+                    <input type="checkbox" name="cbLanguage5" value="Python"><label for="cbLanguage5">R</label><br>
+                    <input type="checkbox" name="cbLanguage6" value="Java"><label for="cbLanguage6">Java</label><br>
+                    <input type="checkbox" name="cbLanguage7" value="SQL"><label for="cbLanguage7">SQL</label><br>
+                    <input type="checkbox" name="cbLanguage8" value="C/C++/C#"><label for="cbLanguage8">C/C++/C#</label>
+                  </fieldset>
             </div>
         </form>
     </div>
