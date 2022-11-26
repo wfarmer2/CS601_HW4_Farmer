@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>BU MET | CS601</title>
+    <script src="javascript/validation.js"></script>
 </head>
 <body>
     <div id="formWrapper">
         <h1 id="formTitle">Boston University - Metropolitan College - CS601 Form</h1>
-        <form action="">
+        <form name="cs601Form" id="cs601Form" novalidate onsubmit="return validateForm();">
             <!--First row of form to gather first name input-->
             <div id="row1">
                 <label for="firstName">Please enter your first name (required):</label>
@@ -34,7 +35,7 @@
                   </fieldset>
             </div>
             <!--Fifth row of form for checkbox choices of coding language experience-->
-            <div id="row4">
+            <div id="row5">
                 <fieldset id="checkboxChoices">
                     <legend>Which of the following coding languages do you have experience with? (select all that apply)</legend>
                     <input type="checkbox" name="cbLanguage1" value="CSS"><label for="cbLanguage1">CSS</label><br>
@@ -46,6 +47,9 @@
                     <input type="checkbox" name="cbLanguage7" value="SQL"><label for="cbLanguage7">SQL</label><br>
                     <input type="checkbox" name="cbLanguage8" value="C/C++/C#"><label for="cbLanguage8">C/C++/C#</label>
                   </fieldset>
+            </div>
+            <div id="row6">
+                <input type="submit" id="submit" value="Submit">
             </div>
         </form>
     </div>
