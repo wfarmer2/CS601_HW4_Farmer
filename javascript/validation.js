@@ -1,3 +1,6 @@
+
+const letterPattern = /^[A-Za-z]+$/;
+
 function validateForm() {
     return (validateFirstName() && validateLastName() && validateFacilitator());
 }
@@ -7,6 +10,12 @@ function validateFirstName() {
 
     if (firstName.value.length <= 2) {
         alert("Invalid name! First name must contain two (2) or more characters.");
+        firstName.focus();
+        return false;
+    }
+
+    if (!(firstName.value.match(letterPattern))) {
+        alert("Invalid name! First name must contain only alphabetic characters.")
         firstName.focus();
         return false;
     }
@@ -20,6 +29,12 @@ function validateLastName() {
 
     if (lastName.value.length <= 2) {
         alert("Invalid name! Last name must contain two (2) or more characters.");
+        lastName.focus();
+        return false;
+    }
+
+    if (!(lastName.value.match(letterPattern))) {
+        alert("Invalid name! Last name must contain only alphabetic characters.")
         lastName.focus();
         return false;
     }
