@@ -1,0 +1,16 @@
+:root {
+    --valid-check: green;
+    --invalid-check: crimson;
+    --main-color: ivory;
+    --secondary-color: black;
+    --tertiary-color: red;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+form {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+}
