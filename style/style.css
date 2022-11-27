@@ -1,6 +1,8 @@
 :root {
     --valid-check: green;
+    --valid-check-background: lightgreen;
     --invalid-check: crimson;
+    --invalid-check-background: lightsalmon;
     --main-color: ivory;
     --secondary-color: black;
     --tertiary-color: red;
@@ -8,9 +10,21 @@
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+
+h1 {
+    text-align: center;
+}
 form {
-    display: flex;
+    display: flexbox;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 16px;
+}
+input, fieldset {
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    font-size: 12pt;
+    margin: 0.25em;
+    min-width: 125px;
+    padding: 0.5em;
 }

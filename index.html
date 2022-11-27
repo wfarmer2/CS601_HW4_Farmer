@@ -12,18 +12,18 @@
         <form name="cs601Form" id="cs601Form" novalidate onsubmit="return validateForm();">
             <!--First row of form to gather first name input-->
             <div id="row1">
-                <label for="firstName">Please enter your first name (required):</label>
-                <input type="text" name="firstName" id="firstName" required>
+                <label for="firstName" id="firstNamePrompt">Please enter your first name (required):</label>
+                <input type="text" placeholder="First Name" id="firstName" required>
             </div>
             <!--Second row of form to gather last name input-->
             <div id="row2">
-                <label for="lastName">Please enter your last name (required):</label>
-                <input type="text" name="lastName" id="lastName" required>
+                <label for="lastName" id="lastNamePrompt">Please enter your last name (required):</label>
+                <input type="text" placeholder="Last Name" name="lastName" id="lastName" required>
             </div>
             <!--Third row of form to gather first name of facilitator input-->
             <div id="row3">
-                <label for="facilitator">Please enter your facilitator's first name (required):</label>
-                <input type="text" name="facilitator" id="facilitator" required>
+                <label for="facilitator" id="facilitatorPrompt">Please enter your facilitator's first name (required):</label>
+                <input type="text" placeholder="Facilitator Name" name="facilitator" id="facilitator" required>
             </div>
             <!--Fourth row of form for radio button choices of graduate program-->
             <div id="row4">
