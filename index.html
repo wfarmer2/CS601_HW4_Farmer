@@ -9,11 +9,11 @@
 <body>
     <div id="formWrapper">
         <h1 id="formTitle">Boston University - Metropolitan College - CS601 Form</h1>
-        <form name="cs601Form" id="cs601Form" novalidate onsubmit="return validateForm(event);">
+        <form name="cs601Form" id="cs601Form" action="https://cs601.bu-course-examples.com/hw4/380a98f5-5191-496f-8aa1-7acc1da83cc5" method="POST" onsubmit="return validateForm(event);">
             <!--First row of form to gather first name input-->
             <div id="row1">
                 <label for="firstName" id="firstNamePrompt">Please enter your first name (required):</label>
-                <input type="text" placeholder="First Name" id="firstName" required>
+                <input type="text" placeholder="First Name" name="firstName" id="firstName" required>
             </div>
             <!--Second row of form to gather last name input-->
             <div id="row2">
@@ -29,24 +29,24 @@
             <div id="row4">
                 <fieldset id="radioButtons">
                     <legend>Which of the following graduate degree program are you enrolled in?</legend>
-                    <input type="radio" name="radioMessageType" value="Master of Science in Applied Data Analytics"><label for="radioMessageType">Master of Science in Applied Data Analytics</label><br>
-                    <input type="radio" name="radioMessageType" value="Master of Science in Computer Information Systems"><label for="radioMessageType">Master of Science in Computer Information Systems</label><br>
-                    <input type="radio" name="radioMessageType" value="Master of Science in Health Informatics"><label for="radioMessageType">Master of Science in Health Informatics</label><br>
-                    <input type="radio" name="radioMessageType" value="Master of Science in Software Development"><label for="radioMessageType">Master of Science in Software Development</label>
+                    <input type="radio" name="radioMessage" id="radioMessage1" value="Master of Science in Applied Data Analytics"><label for="radioMessage1">Master of Science in Applied Data Analytics</label><br>
+                    <input type="radio" name="radioMessage" id="radioMessage2" value="Master of Science in Computer Information Systems"><label for="radioMessage2">Master of Science in Computer Information Systems</label><br>
+                    <input type="radio" name="radioMessage" id="radioMessage3" value="Master of Science in Health Informatics"><label for="radioMessage3">Master of Science in Health Informatics</label><br>
+                    <input type="radio" name="radioMessage" id="radioMessage4" value="Master of Science in Software Development"><label for="radioMessage4">Master of Science in Software Development</label>
                   </fieldset>
             </div>
             <!--Fifth row of form for checkbox choices of coding language experience-->
             <div id="row5">
                 <fieldset id="checkboxChoices">
                     <legend>Which of the following coding languages do you have experience with? (select all that apply)</legend>
-                    <input type="checkbox" name="cbLanguage1" value="CSS"><label for="cbLanguage1">CSS</label><br>
-                    <input type="checkbox" name="cbLanguage2" value="HTML"><label for="cbLanguage2">HTML</label><br>
-                    <input type="checkbox" name="cbLanguage3" value="JavaScript"><label for="cbLanguage3">JavaScript</label><br>
-                    <input type="checkbox" name="cbLanguage4" value="Python"><label for="cbLanguage4">Python</label><br>
-                    <input type="checkbox" name="cbLanguage5" value="Python"><label for="cbLanguage5">R</label><br>
-                    <input type="checkbox" name="cbLanguage6" value="Java"><label for="cbLanguage6">Java</label><br>
-                    <input type="checkbox" name="cbLanguage7" value="SQL"><label for="cbLanguage7">SQL</label><br>
-                    <input type="checkbox" name="cbLanguage8" value="C/C++/C#"><label for="cbLanguage8">C/C++/C#</label>
+                    <input type="checkbox" name="cbLanguage1" id="cbLanguage1" value="CSS"><label for="cbLanguage1">CSS</label><br>
+                    <input type="checkbox" name="cbLanguage2" id="cbLanguage2" value="HTML"><label for="cbLanguage2">HTML</label><br>
+                    <input type="checkbox" name="cbLanguage3" id="cbLanguage3" value="JavaScript"><label for="cbLanguage3">JavaScript</label><br>
+                    <input type="checkbox" name="cbLanguage4" id="cbLanguage4" value="Python"><label for="cbLanguage4">Python</label><br>
+                    <input type="checkbox" name="cbLanguage5" id="cbLanguage5" value="Python"><label for="cbLanguage5">R</label><br>
+                    <input type="checkbox" name="cbLanguage6" id="cbLanguage6" value="Java"><label for="cbLanguage6">Java</label><br>
+                    <input type="checkbox" name="cbLanguage7" id="cbLanguage7" value="SQL"><label for="cbLanguage7">SQL</label><br>
+                    <input type="checkbox" name="cbLanguage8" id="cbLanguage8" value="C/C++/C#"><label for="cbLanguage8">C/C++/C#</label>
                   </fieldset>
             </div>
             <div id="row6">

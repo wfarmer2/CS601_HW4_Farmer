@@ -55,9 +55,9 @@ function validateLastName() {
 
 function validateFacilitator() {
     let facilitator = document.getElementById("facilitator")
-    const facilitatorList = ["JEN", "BEHDAD", "CHRIS", "CHRISTIAN", "JOSH"]
+    const facilitatorList = ["jen", "behdad", "chris", "christian", "josh"]
     
-    if (!facilitatorList.includes(facilitator.value.toUpperCase())) {
+    if (!facilitatorList.includes(facilitator.value.toLowerCase())) {
         document.getElementById("facilitatorPrompt").innerHTML = ("<span style='color:red'> Invalid facilitator name! Please type a current facilitator name: Jen, Behdad, Chris, Christian, or Josh.</span>")
         facilitator.focus();
         return false;
