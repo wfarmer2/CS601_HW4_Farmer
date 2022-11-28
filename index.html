@@ -9,7 +9,7 @@
 <body>
     <div id="formWrapper">
         <h1 id="formTitle">Boston University - Metropolitan College - CS601 Form</h1>
-        <form name="cs601Form" id="cs601Form" novalidate onsubmit="return validateForm();">
+        <form name="cs601Form" id="cs601Form" novalidate onsubmit="return validateForm(event);">
             <!--First row of form to gather first name input-->
             <div id="row1">
                 <label for="firstName" id="firstNamePrompt">Please enter your first name (required):</label>
@@ -50,7 +50,7 @@
                   </fieldset>
             </div>
             <div id="row6">
-                <input type="submit" id="submit" value="Submit">
+                <input type="submit" id="submitButton" value="Submit Form">
             </div>
         </form>
     </div>

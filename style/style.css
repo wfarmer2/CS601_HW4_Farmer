@@ -8,23 +8,54 @@
     --tertiary-color: red;
 }
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: beige;
 }
-
 h1 {
     text-align: center;
+    background-color: var(--tertiary-color);
+    color: var(--main-color);
+    border: 5px solid var(--secondary-color);
+    border-radius: 6px;
 }
 form {
-    display: flexbox;
+    display: block;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 16px;
 }
-input, fieldset {
+#firstName, #lastName, #facilitator, fieldset {
     border: 2px solid var(--secondary-color);
     border-radius: 4px;
     font-size: 12pt;
     margin: 0.25em;
-    min-width: 125px;
+    width: 95%;
     padding: 0.5em;
+}
+#firstNamePrompt, #lastNamePrompt, #facilitatorPrompt, legend {
+    font-weight: bold;
+}
+#submitButton {
+    font-size: 14pt;
+    font-weight: bold;
+}
+input[type=submit] {
+    background-color: var(--main-color);
+    border: 5px solid var(--tertiary-color);
+    border-radius: 6px;
+    color: var(--secondary-color);
+    padding: 1em;
+    margin: 1em;
+    width: 95%;
+}
+input[type=submit]:hover {
+    background-color: var(--tertiary-color);
+    border: 5px solid var(--secondary-color);
+    color: var(--main-color);
+}
+input:required:focus:invalid {
+    background: var(--valid-check-background);
+}
+input:required:focus:invalid {
+    background: var(--invalid-check-background);
 }
