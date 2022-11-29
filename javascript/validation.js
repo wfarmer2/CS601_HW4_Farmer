@@ -92,11 +92,11 @@ function validateFacilitator() {
     // grab input value from DOM
     let facilitator = document.getElementById("facilitator")
     // only valid facilitator names that can be entered into form
-    const facilitatorList = ["jen", "behad", "chris", "christian", "josh"]
+    const facilitatorList = ["jen", "behdad", "chris", "christian", "josh"]
     
     if (!facilitatorList.includes(facilitator.value.toLowerCase())) {
         // change message using DOM manipulation to show error and change text color to user
-        document.getElementById("facilitatorPrompt").innerHTML = ("<span style='color:red'> Invalid facilitator name! Please type a current facilitator name: Jen, Behad, Chris, Christian, or Josh.</span>");
+        document.getElementById("facilitatorPrompt").innerHTML = ("<span style='color:red'> Invalid facilitator name! Please type a current facilitator name: Jen, Behdad, Chris, Christian, or Josh.</span>");
         // focus on text input and return false to not submit form
         facilitator.focus();
         return false;
