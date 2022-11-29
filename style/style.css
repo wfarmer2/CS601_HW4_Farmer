@@ -1,3 +1,4 @@
+/*color variables for styling*/
 :root {
     --valid-check: green;
     --valid-check-background: lightgreen;
@@ -7,23 +8,33 @@
     --secondary-color: black;
     --tertiary-color: red;
 }
+/*body and head styling*/
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: beige;
 }
 h1 {
+    font-style: oblique;
     text-align: center;
     background-color: var(--tertiary-color);
     color: var(--main-color);
     border: 5px solid var(--secondary-color);
     border-radius: 6px;
 }
+/*image styling*/
+img {
+    margin: auto;
+    display: block;
+}
+/*general form styling*/
 form {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: block;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 16px;
 }
+/*form id styling*/
 #firstName, #lastName, #facilitator {
     border: 2px solid var(--secondary-color);
     border-radius: 4px;
@@ -44,12 +55,14 @@ form {
     font-weight: bold;
 }
 #submitButton {
+    font-style: oblique;
     font-size: 14pt;
     font-weight: bold;
     margin: 1em;
     min-width: 95%;
     padding: 0.5em;
 }
+/*form input styling*/
 input[type=submit] {
     background-color: var(--main-color);
     border: 5px solid var(--tertiary-color);
